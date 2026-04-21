@@ -1,0 +1,39 @@
+{
+    "mIoU": 0.8775382597199686,
+    "mPrecision": 0.9304319081462437,
+    "mRecall": 0.9381744911778941,
+    "mF1": 0.934138293848963,
+    "OA": 0.9459041069633394,
+    "per_class_iou": {
+        "Low shrub": 0.8492336213432915,
+        "Impervious surfaces": 0.9093805603460792,
+        "Building": 0.9453008860764879,
+        "Background": 0.8806057189040297,
+        "Vegetation": 0.8813832456751535,
+        "Vehicle": 0.7993255259747702
+    },
+    "per_class_precision": {
+        "Low shrub": 0.9129155581390148,
+        "Impervious surfaces": 0.9569055236177656,
+        "Building": 0.9721606861302136,
+        "Background": 0.9085058334402598,
+        "Vegetation": 0.9372984992211508,
+        "Vehicle": 0.8948053483290574
+    },
+    "per_class_recall": {
+        "Low shrub": 0.9240942391095935,
+        "Impervious surfaces": 0.9482138803202298,
+        "Building": 0.9716022985131302,
+        "Background": 0.9663015863574903,
+        "Vegetation": 0.9366064967882284,
+        "Vehicle": 0.8822284459786928
+    },
+    "per_class_f1": {
+        "Low shrub": 0.9184708810382666,
+        "Impervious surfaces": 0.9525398702162339,
+        "Building": 0.9718814071172612,
+        "Background": 0.9365128536567212,
+        "Vegetation": 0.9369523652321063,
+        "Vehicle": 0.8884723858331887
+    }
+}
