@@ -1,0 +1,450 @@
+[02:04:01.301] Namespace(root_path='/root/autodl-tmp/ST-Unet/datasets/Vaihingen/npz_data_RGB_improved', dataset='遥感图像语义分割对比实验', list_dir='/root/autodl-tmp/ST-Unet/datasets/Vaihingen/lists_txt_RGB_improved', num_classes=6, max_iterations=30000, max_epochs=150, batch_size=8, n_gpu=1, deterministic=1, base_lr=0.001, img_size=256, seed=1234, n_skip=3, vit_name='R50-ViT-B_16', vit_patches_size=16, att_type=None, pretrained_path='/root/autodl-tmp/ST-Unet/model/vit_checkpoint/imagenet21k/R50+ViT-B_16.npz', weight_decay=0.05, label_smoothing=0.1, max_grad_norm=1.0, patience=20, drop_rate=0.3, drop_path_rate=0.25, model_name='HRViTRS', data_stats_path='/root/autodl-tmp/ST-Unet/datasets/Vaihingen/rgb_data_stats_improved.npz', resume_from='/root/autodl-tmp/ST-Unet/ComparedModel2/FinalResults/HRViTRS/Vai_256/HRViTRS_Vai_256_256_bs8_ep100_final_20260120_204323.pth', in_channels=3, is_pretrain=True)
+[02:05:49.067] Namespace(root_path='/root/autodl-tmp/ST-Unet/datasets/Vaihingen/npz_data_RGB_improved', dataset='遥感图像语义分割对比实验', list_dir='/root/autodl-tmp/ST-Unet/datasets/Vaihingen/lists_txt_RGB_improved', num_classes=6, max_iterations=30000, max_epochs=150, batch_size=8, n_gpu=1, deterministic=1, base_lr=0.001, img_size=256, seed=1234, n_skip=3, vit_name='R50-ViT-B_16', vit_patches_size=16, att_type=None, pretrained_path='/root/autodl-tmp/ST-Unet/model/vit_checkpoint/imagenet21k/R50+ViT-B_16.npz', weight_decay=0.05, label_smoothing=0.1, max_grad_norm=1.0, patience=20, drop_rate=0.3, drop_path_rate=0.25, model_name='HRViTRS', data_stats_path='/root/autodl-tmp/ST-Unet/datasets/Vaihingen/rgb_data_stats_improved.npz', resume_from='/root/autodl-tmp/ST-Unet/ComparedModel2/FinalResults/HRViTRS/Vai_256/HRViTRS_Vai_256_256_bs8_ep100_final_20260120_204323.pth', in_channels=3, is_pretrain=True)
+[02:10:39.980] Namespace(root_path='/root/autodl-tmp/ST-Unet/datasets/Vaihingen/npz_data_RGB_improved', dataset='遥感图像语义分割对比实验', list_dir='/root/autodl-tmp/ST-Unet/datasets/Vaihingen/lists_txt_RGB_improved', num_classes=6, max_iterations=30000, max_epochs=150, batch_size=8, n_gpu=1, deterministic=1, base_lr=0.001, img_size=256, seed=1234, n_skip=3, vit_name='R50-ViT-B_16', vit_patches_size=16, att_type=None, pretrained_path='/root/autodl-tmp/ST-Unet/model/vit_checkpoint/imagenet21k/R50+ViT-B_16.npz', weight_decay=0.05, label_smoothing=0.1, max_grad_norm=1.0, patience=20, drop_rate=0.3, drop_path_rate=0.25, model_name='HRViTRS', data_stats_path='/root/autodl-tmp/ST-Unet/datasets/Vaihingen/rgb_data_stats_improved.npz', resume_from='/root/autodl-tmp/ST-Unet/ComparedModel2/FinalResults/HRViTRS/Vai_256/HRViTRS_Vai_256_256_bs8_ep100_final_20260120_204323.pth', in_channels=3, is_pretrain=True)
+[02:10:39.993] ⚠️ Checkpoint中未找到优化器状态，优化器将重新初始化
+[02:10:39.995] ✅ 初始化训练结果CSV文件：/root/autodl-tmp/ST-Unet/ComparedModels_U/HRViTRS_Vai_networksD/HRViTRS_Vai_256_256/iter30k_epo150_bs8_lr0.001_s1234/train_results.csv
+[02:11:52.084] 
+[Epoch 101/150] Loss=0.3432 | mIoU=0.6592 | mPrec=0.7935 | mRec=0.7852
+[02:11:52.084]   Class 0: IoU=0.6426, Prec=0.7917, Rec=0.7734
+[02:11:52.085]   Class 1: IoU=0.7501, Prec=0.8542, Rec=0.8602
+[02:11:52.085]   Class 2: IoU=0.8058, Prec=0.8979, Rec=0.8870
+[02:11:52.086]   Class 3: IoU=0.5328, Prec=0.6911, Rec=0.6993
+[02:11:52.087]   Class 4: IoU=0.7213, Prec=0.8241, Rec=0.8525
+[02:11:52.087]   Class 5: IoU=0.5026, Prec=0.7022, Rec=0.6388
+[02:11:52.184] 
+🎉 【最优模型更新】Epoch 101 | mIoU = 0.6592
+
+[02:13:03.496] 
+[Epoch 102/150] Loss=0.3454 | mIoU=0.6511 | mPrec=0.7860 | mRec=0.7786
+[02:13:03.496]   Class 0: IoU=0.6417, Prec=0.7901, Rec=0.7735
+[02:13:03.497]   Class 1: IoU=0.7504, Prec=0.8533, Rec=0.8616
+[02:13:03.497]   Class 2: IoU=0.8050, Prec=0.8977, Rec=0.8863
+[02:13:03.497]   Class 3: IoU=0.4824, Prec=0.6415, Rec=0.6604
+[02:13:03.498]   Class 4: IoU=0.7209, Prec=0.8259, Rec=0.8501
+[02:13:03.498]   Class 5: IoU=0.5059, Prec=0.7075, Rec=0.6397
+[02:14:13.792] 
+[Epoch 103/150] Loss=0.3455 | mIoU=0.6598 | mPrec=0.7942 | mRec=0.7858
+[02:14:13.792]   Class 0: IoU=0.6394, Prec=0.7920, Rec=0.7684
+[02:14:13.792]   Class 1: IoU=0.7501, Prec=0.8520, Rec=0.8625
+[02:14:13.793]   Class 2: IoU=0.8065, Prec=0.8985, Rec=0.8874
+[02:14:13.793]   Class 3: IoU=0.5382, Prec=0.6951, Rec=0.7046
+[02:14:13.795]   Class 4: IoU=0.7199, Prec=0.8228, Rec=0.8520
+[02:14:13.795]   Class 5: IoU=0.5048, Prec=0.7050, Rec=0.6400
+[02:14:13.893] 
+🎉 【最优模型更新】Epoch 103 | mIoU = 0.6598
+
+[02:15:26.158] 
+[Epoch 104/150] Loss=0.3425 | mIoU=0.6609 | mPrec=0.7938 | mRec=0.7877
+[02:15:26.158]   Class 0: IoU=0.6437, Prec=0.7907, Rec=0.7759
+[02:15:26.158]   Class 1: IoU=0.7516, Prec=0.8556, Rec=0.8609
+[02:15:26.158]   Class 2: IoU=0.8062, Prec=0.8985, Rec=0.8870
+[02:15:26.159]   Class 3: IoU=0.5325, Prec=0.6839, Rec=0.7064
+[02:15:26.160]   Class 4: IoU=0.7220, Prec=0.8260, Rec=0.8515
+[02:15:26.161]   Class 5: IoU=0.5093, Prec=0.7079, Rec=0.6448
+[02:15:26.260] 
+🎉 【最优模型更新】Epoch 104 | mIoU = 0.6609
+
+[02:16:35.873] 
+[Epoch 105/150] Loss=0.3450 | mIoU=0.6612 | mPrec=0.7974 | mRec=0.7850
+[02:16:35.873]   Class 0: IoU=0.6378, Prec=0.7885, Rec=0.7695
+[02:16:35.874]   Class 1: IoU=0.7504, Prec=0.8534, Rec=0.8615
+[02:16:35.874]   Class 2: IoU=0.8061, Prec=0.8982, Rec=0.8871
+[02:16:35.875]   Class 3: IoU=0.5479, Prec=0.7142, Rec=0.7018
+[02:16:35.877]   Class 4: IoU=0.7193, Prec=0.8230, Rec=0.8509
+[02:16:35.877]   Class 5: IoU=0.5055, Prec=0.7073, Rec=0.6391
+[02:16:35.973] 
+🎉 【最优模型更新】Epoch 105 | mIoU = 0.6612
+
+[02:17:47.330] 
+[Epoch 106/150] Loss=0.3443 | mIoU=0.6568 | mPrec=0.7913 | mRec=0.7831
+[02:17:47.331]   Class 0: IoU=0.6414, Prec=0.7907, Rec=0.7726
+[02:17:47.331]   Class 1: IoU=0.7516, Prec=0.8541, Rec=0.8623
+[02:17:47.332]   Class 2: IoU=0.8074, Prec=0.8991, Rec=0.8878
+[02:17:47.332]   Class 3: IoU=0.5142, Prec=0.6739, Rec=0.6845
+[02:17:47.333]   Class 4: IoU=0.7211, Prec=0.8251, Rec=0.8512
+[02:17:47.333]   Class 5: IoU=0.5050, Prec=0.7049, Rec=0.6404
+[02:18:57.572] 
+[Epoch 107/150] Loss=0.3446 | mIoU=0.6583 | mPrec=0.7918 | mRec=0.7856
+[02:18:57.572]   Class 0: IoU=0.6411, Prec=0.7906, Rec=0.7723
+[02:18:57.572]   Class 1: IoU=0.7505, Prec=0.8536, Rec=0.8615
+[02:18:57.573]   Class 2: IoU=0.8070, Prec=0.8995, Rec=0.8870
+[02:18:57.573]   Class 3: IoU=0.5250, Prec=0.6744, Rec=0.7033
+[02:18:57.574]   Class 4: IoU=0.7213, Prec=0.8246, Rec=0.8520
+[02:18:57.575]   Class 5: IoU=0.5047, Prec=0.7079, Rec=0.6374
+[02:20:08.161] 
+[Epoch 108/150] Loss=0.3445 | mIoU=0.6623 | mPrec=0.7954 | mRec=0.7887
+[02:20:08.162]   Class 0: IoU=0.6390, Prec=0.7888, Rec=0.7709
+[02:20:08.162]   Class 1: IoU=0.7516, Prec=0.8541, Rec=0.8623
+[02:20:08.163]   Class 2: IoU=0.8064, Prec=0.8990, Rec=0.8867
+[02:20:08.163]   Class 3: IoU=0.5480, Prec=0.6990, Rec=0.7173
+[02:20:08.164]   Class 4: IoU=0.7212, Prec=0.8250, Rec=0.8514
+[02:20:08.164]   Class 5: IoU=0.5078, Prec=0.7065, Rec=0.6436
+[02:20:08.263] 
+🎉 【最优模型更新】Epoch 108 | mIoU = 0.6623
+
+[02:21:19.650] 
+[Epoch 109/150] Loss=0.3439 | mIoU=0.6612 | mPrec=0.7946 | mRec=0.7877
+[02:21:19.650]   Class 0: IoU=0.6439, Prec=0.7924, Rec=0.7745
+[02:21:19.650]   Class 1: IoU=0.7515, Prec=0.8532, Rec=0.8630
+[02:21:19.651]   Class 2: IoU=0.8073, Prec=0.8995, Rec=0.8874
+[02:21:19.651]   Class 3: IoU=0.5402, Prec=0.6858, Rec=0.7178
+[02:21:19.652]   Class 4: IoU=0.7201, Prec=0.8250, Rec=0.8499
+[02:21:19.653]   Class 5: IoU=0.5044, Prec=0.7118, Rec=0.6338
+[02:22:30.114] 
+[Epoch 110/150] Loss=0.3411 | mIoU=0.6622 | mPrec=0.7949 | mRec=0.7888
+[02:22:30.114]   Class 0: IoU=0.6408, Prec=0.7914, Rec=0.7710
+[02:22:30.115]   Class 1: IoU=0.7529, Prec=0.8549, Rec=0.8632
+[02:22:30.115]   Class 2: IoU=0.8091, Prec=0.9009, Rec=0.8881
+[02:22:30.115]   Class 3: IoU=0.5400, Prec=0.6866, Rec=0.7166
+[02:22:30.116]   Class 4: IoU=0.7216, Prec=0.8238, Rec=0.8533
+[02:22:30.117]   Class 5: IoU=0.5087, Prec=0.7118, Rec=0.6406
+[02:22:30.226] 💾 【定期保存】已保存 Epoch 110 的模型权重
+[02:23:40.505] 
+[Epoch 111/150] Loss=0.3438 | mIoU=0.6629 | mPrec=0.8008 | mRec=0.7842
+[02:23:40.505]   Class 0: IoU=0.6402, Prec=0.7889, Rec=0.7726
+[02:23:40.505]   Class 1: IoU=0.7525, Prec=0.8546, Rec=0.8630
+[02:23:40.506]   Class 2: IoU=0.8088, Prec=0.8994, Rec=0.8893
+[02:23:40.506]   Class 3: IoU=0.5512, Prec=0.7308, Rec=0.6916
+[02:23:40.506]   Class 4: IoU=0.7209, Prec=0.8258, Rec=0.8502
+[02:23:40.507]   Class 5: IoU=0.5039, Prec=0.7052, Rec=0.6383
+[02:23:40.607] 
+🎉 【最优模型更新】Epoch 111 | mIoU = 0.6629
+
+[02:24:51.567] 
+[Epoch 112/150] Loss=0.3410 | mIoU=0.6652 | mPrec=0.7969 | mRec=0.7918
+[02:24:51.567]   Class 0: IoU=0.6441, Prec=0.7925, Rec=0.7748
+[02:24:51.567]   Class 1: IoU=0.7518, Prec=0.8548, Rec=0.8618
+[02:24:51.567]   Class 2: IoU=0.8072, Prec=0.8996, Rec=0.8871
+[02:24:51.567]   Class 3: IoU=0.5553, Prec=0.7016, Rec=0.7270
+[02:24:51.570]   Class 4: IoU=0.7229, Prec=0.8257, Rec=0.8531
+[02:24:51.570]   Class 5: IoU=0.5100, Prec=0.7070, Rec=0.6466
+[02:24:51.668] 
+🎉 【最优模型更新】Epoch 112 | mIoU = 0.6652
+
+[02:26:02.631] 
+[Epoch 113/150] Loss=0.3419 | mIoU=0.6615 | mPrec=0.7940 | mRec=0.7885
+[02:26:02.631]   Class 0: IoU=0.6428, Prec=0.7916, Rec=0.7737
+[02:26:02.631]   Class 1: IoU=0.7516, Prec=0.8549, Rec=0.8615
+[02:26:02.631]   Class 2: IoU=0.8085, Prec=0.8989, Rec=0.8894
+[02:26:02.631]   Class 3: IoU=0.5358, Prec=0.6816, Rec=0.7147
+[02:26:02.633]   Class 4: IoU=0.7222, Prec=0.8263, Rec=0.8515
+[02:26:02.633]   Class 5: IoU=0.5079, Prec=0.7111, Rec=0.6400
+[02:27:13.733] 
+[Epoch 114/150] Loss=0.3435 | mIoU=0.6580 | mPrec=0.7933 | mRec=0.7832
+[02:27:13.734]   Class 0: IoU=0.6432, Prec=0.7904, Rec=0.7755
+[02:27:13.734]   Class 1: IoU=0.7511, Prec=0.8549, Rec=0.8609
+[02:27:13.735]   Class 2: IoU=0.8076, Prec=0.8989, Rec=0.8882
+[02:27:13.735]   Class 3: IoU=0.5215, Prec=0.6838, Rec=0.6872
+[02:27:13.736]   Class 4: IoU=0.7197, Prec=0.8246, Rec=0.8498
+[02:27:13.737]   Class 5: IoU=0.5047, Prec=0.7073, Rec=0.6378
+[02:28:24.541] 
+[Epoch 115/150] Loss=0.3433 | mIoU=0.6594 | mPrec=0.7948 | mRec=0.7841
+[02:28:24.542]   Class 0: IoU=0.6425, Prec=0.7926, Rec=0.7723
+[02:28:24.543]   Class 1: IoU=0.7528, Prec=0.8542, Rec=0.8637
+[02:28:24.543]   Class 2: IoU=0.8081, Prec=0.8997, Rec=0.8881
+[02:28:24.543]   Class 3: IoU=0.5223, Prec=0.6876, Rec=0.6848
+[02:28:24.545]   Class 4: IoU=0.7206, Prec=0.8238, Rec=0.8519
+[02:28:24.546]   Class 5: IoU=0.5101, Prec=0.7108, Rec=0.6437
+[02:29:37.144] 
+[Epoch 116/150] Loss=0.3423 | mIoU=0.6596 | mPrec=0.7926 | mRec=0.7870
+[02:29:37.144]   Class 0: IoU=0.6419, Prec=0.7902, Rec=0.7738
+[02:29:37.145]   Class 1: IoU=0.7512, Prec=0.8551, Rec=0.8607
+[02:29:37.145]   Class 2: IoU=0.8067, Prec=0.8979, Rec=0.8881
+[02:29:37.146]   Class 3: IoU=0.5272, Prec=0.6736, Rec=0.7081
+[02:29:37.146]   Class 4: IoU=0.7218, Prec=0.8260, Rec=0.8512
+[02:29:37.147]   Class 5: IoU=0.5088, Prec=0.7128, Rec=0.6400
+[02:30:50.751] 
+[Epoch 117/150] Loss=0.3427 | mIoU=0.6620 | mPrec=0.7949 | mRec=0.7884
+[02:30:50.752]   Class 0: IoU=0.6427, Prec=0.7935, Rec=0.7719
+[02:30:50.752]   Class 1: IoU=0.7529, Prec=0.8552, Rec=0.8629
+[02:30:50.752]   Class 2: IoU=0.8073, Prec=0.8990, Rec=0.8878
+[02:30:50.752]   Class 3: IoU=0.5422, Prec=0.6908, Rec=0.7159
+[02:30:50.755]   Class 4: IoU=0.7212, Prec=0.8232, Rec=0.8534
+[02:30:50.755]   Class 5: IoU=0.5054, Prec=0.7077, Rec=0.6388
+[02:32:02.626] 
+[Epoch 118/150] Loss=0.3403 | mIoU=0.6675 | mPrec=0.8004 | mRec=0.7919
+[02:32:02.626]   Class 0: IoU=0.6446, Prec=0.7944, Rec=0.7737
+[02:32:02.627]   Class 1: IoU=0.7530, Prec=0.8548, Rec=0.8634
+[02:32:02.628]   Class 2: IoU=0.8092, Prec=0.8991, Rec=0.8900
+[02:32:02.628]   Class 3: IoU=0.5659, Prec=0.7176, Rec=0.7281
+[02:32:02.629]   Class 4: IoU=0.7217, Prec=0.8254, Rec=0.8518
+[02:32:02.630]   Class 5: IoU=0.5106, Prec=0.7113, Rec=0.6442
+[02:32:02.728] 
+🎉 【最优模型更新】Epoch 118 | mIoU = 0.6675
+
+[02:33:15.319] 
+[Epoch 119/150] Loss=0.3418 | mIoU=0.6650 | mPrec=0.7984 | mRec=0.7897
+[02:33:15.320]   Class 0: IoU=0.6445, Prec=0.7920, Rec=0.7758
+[02:33:15.320]   Class 1: IoU=0.7535, Prec=0.8559, Rec=0.8629
+[02:33:15.320]   Class 2: IoU=0.8093, Prec=0.9008, Rec=0.8885
+[02:33:15.320]   Class 3: IoU=0.5535, Prec=0.7067, Rec=0.7186
+[02:33:15.323]   Class 4: IoU=0.7219, Prec=0.8253, Rec=0.8521
+[02:33:15.323]   Class 5: IoU=0.5074, Prec=0.7096, Rec=0.6404
+[02:34:27.651] 
+[Epoch 120/150] Loss=0.3407 | mIoU=0.6644 | mPrec=0.7991 | mRec=0.7880
+[02:34:27.651]   Class 0: IoU=0.6437, Prec=0.7907, Rec=0.7760
+[02:34:27.651]   Class 1: IoU=0.7528, Prec=0.8564, Rec=0.8615
+[02:34:27.651]   Class 2: IoU=0.8085, Prec=0.8989, Rec=0.8894
+[02:34:27.651]   Class 3: IoU=0.5457, Prec=0.7128, Rec=0.6995
+[02:34:27.653]   Class 4: IoU=0.7219, Prec=0.8264, Rec=0.8509
+[02:34:27.654]   Class 5: IoU=0.5138, Prec=0.7093, Rec=0.6509
+[02:34:27.751] 💾 【定期保存】已保存 Epoch 120 的模型权重
+[02:35:38.812] 
+[Epoch 121/150] Loss=0.3437 | mIoU=0.6641 | mPrec=0.7998 | mRec=0.7872
+[02:35:38.813]   Class 0: IoU=0.6411, Prec=0.7918, Rec=0.7711
+[02:35:38.813]   Class 1: IoU=0.7509, Prec=0.8532, Rec=0.8623
+[02:35:38.813]   Class 2: IoU=0.8083, Prec=0.8992, Rec=0.8889
+[02:35:38.813]   Class 3: IoU=0.5537, Prec=0.7189, Rec=0.7067
+[02:35:38.815]   Class 4: IoU=0.7209, Prec=0.8240, Rec=0.8521
+[02:35:38.815]   Class 5: IoU=0.5095, Prec=0.7119, Rec=0.6419
+[02:36:48.384] 
+[Epoch 122/150] Loss=0.3414 | mIoU=0.6630 | mPrec=0.7962 | mRec=0.7887
+[02:36:48.384]   Class 0: IoU=0.6439, Prec=0.7914, Rec=0.7755
+[02:36:48.384]   Class 1: IoU=0.7528, Prec=0.8563, Rec=0.8617
+[02:36:48.384]   Class 2: IoU=0.8095, Prec=0.8992, Rec=0.8902
+[02:36:48.384]   Class 3: IoU=0.5384, Prec=0.6880, Rec=0.7123
+[02:36:48.386]   Class 4: IoU=0.7221, Prec=0.8265, Rec=0.8511
+[02:36:48.387]   Class 5: IoU=0.5114, Prec=0.7158, Rec=0.6417
+[02:37:59.634] 
+[Epoch 123/150] Loss=0.3429 | mIoU=0.6641 | mPrec=0.7966 | mRec=0.7903
+[02:37:59.634]   Class 0: IoU=0.6433, Prec=0.7914, Rec=0.7746
+[02:37:59.634]   Class 1: IoU=0.7518, Prec=0.8549, Rec=0.8618
+[02:37:59.634]   Class 2: IoU=0.8078, Prec=0.8993, Rec=0.8882
+[02:37:59.634]   Class 3: IoU=0.5491, Prec=0.6981, Rec=0.7201
+[02:37:59.636]   Class 4: IoU=0.7210, Prec=0.8253, Rec=0.8508
+[02:37:59.636]   Class 5: IoU=0.5116, Prec=0.7103, Rec=0.6464
+[02:39:11.333] 
+[Epoch 124/150] Loss=0.3436 | mIoU=0.6630 | mPrec=0.7960 | mRec=0.7891
+[02:39:11.333]   Class 0: IoU=0.6405, Prec=0.7900, Rec=0.7720
+[02:39:11.334]   Class 1: IoU=0.7510, Prec=0.8553, Rec=0.8603
+[02:39:11.334]   Class 2: IoU=0.8077, Prec=0.8986, Rec=0.8887
+[02:39:11.334]   Class 3: IoU=0.5490, Prec=0.7023, Rec=0.7155
+[02:39:11.335]   Class 4: IoU=0.7213, Prec=0.8245, Rec=0.8522
+[02:39:11.336]   Class 5: IoU=0.5087, Prec=0.7051, Rec=0.6462
+[02:40:22.787] 
+[Epoch 125/150] Loss=0.3422 | mIoU=0.6625 | mPrec=0.7955 | mRec=0.7885
+[02:40:22.787]   Class 0: IoU=0.6447, Prec=0.7927, Rec=0.7755
+[02:40:22.787]   Class 1: IoU=0.7523, Prec=0.8549, Rec=0.8623
+[02:40:22.788]   Class 2: IoU=0.8083, Prec=0.8999, Rec=0.8882
+[02:40:22.789]   Class 3: IoU=0.5331, Prec=0.6875, Rec=0.7036
+[02:40:22.790]   Class 4: IoU=0.7225, Prec=0.8260, Rec=0.8522
+[02:40:22.792]   Class 5: IoU=0.5142, Prec=0.7122, Rec=0.6491
+[02:41:35.750] 
+[Epoch 126/150] Loss=0.3392 | mIoU=0.6685 | mPrec=0.7993 | mRec=0.7945
+[02:41:35.750]   Class 0: IoU=0.6431, Prec=0.7922, Rec=0.7736
+[02:41:35.750]   Class 1: IoU=0.7546, Prec=0.8572, Rec=0.8631
+[02:41:35.750]   Class 2: IoU=0.8108, Prec=0.9004, Rec=0.8908
+[02:41:35.750]   Class 3: IoU=0.5664, Prec=0.7093, Rec=0.7376
+[02:41:35.753]   Class 4: IoU=0.7226, Prec=0.8259, Rec=0.8525
+[02:41:35.754]   Class 5: IoU=0.5134, Prec=0.7106, Rec=0.6492
+[02:41:35.854] 
+🎉 【最优模型更新】Epoch 126 | mIoU = 0.6685
+
+[02:42:46.790] 
+[Epoch 127/150] Loss=0.3401 | mIoU=0.6644 | mPrec=0.7972 | mRec=0.7900
+[02:42:46.790]   Class 0: IoU=0.6433, Prec=0.7938, Rec=0.7723
+[02:42:46.790]   Class 1: IoU=0.7536, Prec=0.8559, Rec=0.8631
+[02:42:46.791]   Class 2: IoU=0.8096, Prec=0.9000, Rec=0.8896
+[02:42:46.791]   Class 3: IoU=0.5422, Prec=0.6957, Rec=0.7107
+[02:42:46.794]   Class 4: IoU=0.7226, Prec=0.8244, Rec=0.8540
+[02:42:46.794]   Class 5: IoU=0.5154, Prec=0.7131, Rec=0.6502
+[02:43:58.302] 
+[Epoch 128/150] Loss=0.3411 | mIoU=0.6664 | mPrec=0.8007 | mRec=0.7896
+[02:43:58.303]   Class 0: IoU=0.6432, Prec=0.7907, Rec=0.7752
+[02:43:58.303]   Class 1: IoU=0.7536, Prec=0.8569, Rec=0.8620
+[02:43:58.304]   Class 2: IoU=0.8100, Prec=0.8999, Rec=0.8902
+[02:43:58.304]   Class 3: IoU=0.5555, Prec=0.7186, Rec=0.7099
+[02:43:58.306]   Class 4: IoU=0.7211, Prec=0.8253, Rec=0.8511
+[02:43:58.306]   Class 5: IoU=0.5148, Prec=0.7130, Rec=0.6493
+[02:45:07.956] 
+[Epoch 129/150] Loss=0.3411 | mIoU=0.6637 | mPrec=0.7964 | mRec=0.7897
+[02:45:07.956]   Class 0: IoU=0.6426, Prec=0.7920, Rec=0.7731
+[02:45:07.956]   Class 1: IoU=0.7532, Prec=0.8551, Rec=0.8634
+[02:45:07.956]   Class 2: IoU=0.8100, Prec=0.9013, Rec=0.8889
+[02:45:07.956]   Class 3: IoU=0.5378, Prec=0.6870, Rec=0.7124
+[02:45:07.958]   Class 4: IoU=0.7226, Prec=0.8254, Rec=0.8530
+[02:45:07.958]   Class 5: IoU=0.5159, Prec=0.7177, Rec=0.6473
+[02:46:16.989] 
+[Epoch 130/150] Loss=0.3422 | mIoU=0.6622 | mPrec=0.7964 | mRec=0.7872
+[02:46:16.990]   Class 0: IoU=0.6426, Prec=0.7916, Rec=0.7735
+[02:46:16.990]   Class 1: IoU=0.7526, Prec=0.8559, Rec=0.8618
+[02:46:16.990]   Class 2: IoU=0.8080, Prec=0.8989, Rec=0.8888
+[02:46:16.990]   Class 3: IoU=0.5348, Prec=0.6961, Rec=0.6977
+[02:46:16.993]   Class 4: IoU=0.7220, Prec=0.8250, Rec=0.8526
+[02:46:16.994]   Class 5: IoU=0.5133, Prec=0.7108, Rec=0.6487
+[02:46:17.091] 💾 【定期保存】已保存 Epoch 130 的模型权重
+[02:47:27.787] 
+[Epoch 131/150] Loss=0.3417 | mIoU=0.6656 | mPrec=0.7987 | mRec=0.7903
+[02:47:27.788]   Class 0: IoU=0.6434, Prec=0.7903, Rec=0.7758
+[02:47:27.788]   Class 1: IoU=0.7538, Prec=0.8562, Rec=0.8631
+[02:47:27.788]   Class 2: IoU=0.8096, Prec=0.9001, Rec=0.8895
+[02:47:27.788]   Class 3: IoU=0.5537, Prec=0.7063, Rec=0.7192
+[02:47:27.789]   Class 4: IoU=0.7225, Prec=0.8276, Rec=0.8505
+[02:47:27.791]   Class 5: IoU=0.5107, Prec=0.7119, Rec=0.6438
+[02:48:38.054] 
+[Epoch 132/150] Loss=0.3443 | mIoU=0.6552 | mPrec=0.7935 | mRec=0.7782
+[02:48:38.054]   Class 0: IoU=0.6425, Prec=0.7920, Rec=0.7730
+[02:48:38.054]   Class 1: IoU=0.7513, Prec=0.8541, Rec=0.8619
+[02:48:38.055]   Class 2: IoU=0.8084, Prec=0.8997, Rec=0.8885
+[02:48:38.055]   Class 3: IoU=0.4970, Prec=0.6825, Rec=0.6465
+[02:48:38.057]   Class 4: IoU=0.7222, Prec=0.8245, Rec=0.8534
+[02:48:38.058]   Class 5: IoU=0.5100, Prec=0.7081, Rec=0.6457
+[02:49:47.950] 
+[Epoch 133/150] Loss=0.3429 | mIoU=0.6608 | mPrec=0.7958 | mRec=0.7854
+[02:49:47.950]   Class 0: IoU=0.6441, Prec=0.7910, Rec=0.7761
+[02:49:47.950]   Class 1: IoU=0.7511, Prec=0.8548, Rec=0.8609
+[02:49:47.950]   Class 2: IoU=0.8080, Prec=0.8986, Rec=0.8890
+[02:49:47.950]   Class 3: IoU=0.5310, Prec=0.6965, Rec=0.6909
+[02:49:47.952]   Class 4: IoU=0.7219, Prec=0.8269, Rec=0.8504
+[02:49:47.952]   Class 5: IoU=0.5090, Prec=0.7072, Rec=0.6449
+[02:50:58.744] 
+[Epoch 134/150] Loss=0.3414 | mIoU=0.6627 | mPrec=0.7960 | mRec=0.7884
+[02:50:58.744]   Class 0: IoU=0.6431, Prec=0.7928, Rec=0.7730
+[02:50:58.745]   Class 1: IoU=0.7538, Prec=0.8554, Rec=0.8639
+[02:50:58.745]   Class 2: IoU=0.8095, Prec=0.9002, Rec=0.8893
+[02:50:58.745]   Class 3: IoU=0.5397, Prec=0.6928, Rec=0.7096
+[02:50:58.747]   Class 4: IoU=0.7211, Prec=0.8246, Rec=0.8517
+[02:50:58.747]   Class 5: IoU=0.5093, Prec=0.7100, Rec=0.6430
+[02:52:08.366] 
+[Epoch 135/150] Loss=0.3419 | mIoU=0.6655 | mPrec=0.7958 | mRec=0.7930
+[02:52:08.366]   Class 0: IoU=0.6428, Prec=0.7900, Rec=0.7753
+[02:52:08.367]   Class 1: IoU=0.7531, Prec=0.8564, Rec=0.8620
+[02:52:08.367]   Class 2: IoU=0.8099, Prec=0.9016, Rec=0.8884
+[02:52:08.367]   Class 3: IoU=0.5498, Prec=0.6925, Rec=0.7274
+[02:52:08.368]   Class 4: IoU=0.7231, Prec=0.8267, Rec=0.8523
+[02:52:08.368]   Class 5: IoU=0.5142, Prec=0.7079, Rec=0.6527
+[02:53:17.162] 
+[Epoch 136/150] Loss=0.3388 | mIoU=0.6671 | mPrec=0.7987 | mRec=0.7928
+[02:53:17.163]   Class 0: IoU=0.6432, Prec=0.7909, Rec=0.7750
+[02:53:17.163]   Class 1: IoU=0.7545, Prec=0.8577, Rec=0.8624
+[02:53:17.164]   Class 2: IoU=0.8114, Prec=0.9008, Rec=0.8911
+[02:53:17.164]   Class 3: IoU=0.5599, Prec=0.7041, Rec=0.7323
+[02:53:17.165]   Class 4: IoU=0.7219, Prec=0.8259, Rec=0.8514
+[02:53:17.166]   Class 5: IoU=0.5119, Prec=0.7130, Rec=0.6447
+[02:54:26.143] 
+[Epoch 137/150] Loss=0.3407 | mIoU=0.6657 | mPrec=0.7995 | mRec=0.7899
+[02:54:26.143]   Class 0: IoU=0.6404, Prec=0.7888, Rec=0.7729
+[02:54:26.143]   Class 1: IoU=0.7540, Prec=0.8565, Rec=0.8630
+[02:54:26.143]   Class 2: IoU=0.8098, Prec=0.9005, Rec=0.8894
+[02:54:26.143]   Class 3: IoU=0.5544, Prec=0.7112, Rec=0.7155
+[02:54:26.146]   Class 4: IoU=0.7213, Prec=0.8255, Rec=0.8511
+[02:54:26.147]   Class 5: IoU=0.5142, Prec=0.7142, Rec=0.6475
+[02:55:35.630] 
+[Epoch 138/150] Loss=0.3421 | mIoU=0.6652 | mPrec=0.7999 | mRec=0.7887
+[02:55:35.630]   Class 0: IoU=0.6415, Prec=0.7904, Rec=0.7729
+[02:55:35.630]   Class 1: IoU=0.7528, Prec=0.8547, Rec=0.8632
+[02:55:35.631]   Class 2: IoU=0.8088, Prec=0.9001, Rec=0.8886
+[02:55:35.631]   Class 3: IoU=0.5528, Prec=0.7124, Rec=0.7115
+[02:55:35.634]   Class 4: IoU=0.7230, Prec=0.8265, Rec=0.8524
+[02:55:35.634]   Class 5: IoU=0.5125, Prec=0.7154, Rec=0.6437
+[02:56:47.656] 
+[Epoch 139/150] Loss=0.3417 | mIoU=0.6655 | mPrec=0.7992 | mRec=0.7896
+[02:56:47.657]   Class 0: IoU=0.6445, Prec=0.7931, Rec=0.7747
+[02:56:47.657]   Class 1: IoU=0.7543, Prec=0.8550, Rec=0.8649
+[02:56:47.657]   Class 2: IoU=0.8100, Prec=0.9013, Rec=0.8889
+[02:56:47.658]   Class 3: IoU=0.5504, Prec=0.7096, Rec=0.7104
+[02:56:47.659]   Class 4: IoU=0.7218, Prec=0.8257, Rec=0.8516
+[02:56:47.660]   Class 5: IoU=0.5119, Prec=0.7104, Rec=0.6469
+[02:57:59.736] 
+[Epoch 140/150] Loss=0.3430 | mIoU=0.6648 | mPrec=0.7975 | mRec=0.7903
+[02:57:59.736]   Class 0: IoU=0.6447, Prec=0.7940, Rec=0.7743
+[02:57:59.736]   Class 1: IoU=0.7520, Prec=0.8550, Rec=0.8619
+[02:57:59.737]   Class 2: IoU=0.8092, Prec=0.9000, Rec=0.8892
+[02:57:59.738]   Class 3: IoU=0.5509, Prec=0.7010, Rec=0.7201
+[02:57:59.738]   Class 4: IoU=0.7224, Prec=0.8247, Rec=0.8534
+[02:57:59.738]   Class 5: IoU=0.5095, Prec=0.7102, Rec=0.6431
+[02:57:59.837] 💾 【定期保存】已保存 Epoch 140 的模型权重
+[02:59:11.823] 
+[Epoch 141/150] Loss=0.3404 | mIoU=0.6679 | mPrec=0.7992 | mRec=0.7937
+[02:59:11.823]   Class 0: IoU=0.6449, Prec=0.7911, Rec=0.7772
+[02:59:11.824]   Class 1: IoU=0.7535, Prec=0.8552, Rec=0.8636
+[02:59:11.824]   Class 2: IoU=0.8099, Prec=0.9012, Rec=0.8888
+[02:59:11.824]   Class 3: IoU=0.5592, Prec=0.7048, Rec=0.7302
+[02:59:11.827]   Class 4: IoU=0.7233, Prec=0.8288, Rec=0.8504
+[02:59:11.828]   Class 5: IoU=0.5168, Prec=0.7139, Rec=0.6518
+[03:00:22.426] 
+[Epoch 142/150] Loss=0.3399 | mIoU=0.6686 | mPrec=0.8002 | mRec=0.7937
+[03:00:22.426]   Class 0: IoU=0.6437, Prec=0.7938, Rec=0.7730
+[03:00:22.426]   Class 1: IoU=0.7543, Prec=0.8567, Rec=0.8632
+[03:00:22.426]   Class 2: IoU=0.8111, Prec=0.9007, Rec=0.8908
+[03:00:22.426]   Class 3: IoU=0.5698, Prec=0.7146, Rec=0.7377
+[03:00:22.428]   Class 4: IoU=0.7217, Prec=0.8241, Rec=0.8532
+[03:00:22.428]   Class 5: IoU=0.5107, Prec=0.7112, Rec=0.6443
+[03:00:22.528] 
+🎉 【最优模型更新】Epoch 142 | mIoU = 0.6686
+
+[03:01:32.672] 
+[Epoch 143/150] Loss=0.3407 | mIoU=0.6700 | mPrec=0.8022 | mRec=0.7939
+[03:01:32.672]   Class 0: IoU=0.6426, Prec=0.7907, Rec=0.7743
+[03:01:32.672]   Class 1: IoU=0.7532, Prec=0.8561, Rec=0.8623
+[03:01:32.672]   Class 2: IoU=0.8106, Prec=0.9007, Rec=0.8902
+[03:01:32.672]   Class 3: IoU=0.5776, Prec=0.7256, Rec=0.7390
+[03:01:32.676]   Class 4: IoU=0.7231, Prec=0.8267, Rec=0.8523
+[03:01:32.676]   Class 5: IoU=0.5126, Prec=0.7136, Rec=0.6454
+[03:01:32.776] 
+🎉 【最优模型更新】Epoch 143 | mIoU = 0.6700
+
+[03:02:43.527] 
+[Epoch 144/150] Loss=0.3405 | mIoU=0.6672 | mPrec=0.8007 | mRec=0.7911
+[03:02:43.527]   Class 0: IoU=0.6454, Prec=0.7930, Rec=0.7761
+[03:02:43.527]   Class 1: IoU=0.7540, Prec=0.8563, Rec=0.8632
+[03:02:43.528]   Class 2: IoU=0.8095, Prec=0.9007, Rec=0.8889
+[03:02:43.528]   Class 3: IoU=0.5612, Prec=0.7156, Rec=0.7223
+[03:02:43.530]   Class 4: IoU=0.7220, Prec=0.8252, Rec=0.8524
+[03:02:43.530]   Class 5: IoU=0.5115, Prec=0.7137, Rec=0.6435
+[03:03:51.932] 
+[Epoch 145/150] Loss=0.3402 | mIoU=0.6657 | mPrec=0.8012 | mRec=0.7882
+[03:03:51.932]   Class 0: IoU=0.6445, Prec=0.7930, Rec=0.7750
+[03:03:51.932]   Class 1: IoU=0.7545, Prec=0.8563, Rec=0.8639
+[03:03:51.933]   Class 2: IoU=0.8093, Prec=0.9000, Rec=0.8892
+[03:03:51.934]   Class 3: IoU=0.5462, Prec=0.7107, Rec=0.7024
+[03:03:51.934]   Class 4: IoU=0.7233, Prec=0.8260, Rec=0.8534
+[03:03:51.935]   Class 5: IoU=0.5165, Prec=0.7212, Rec=0.6453
+[03:05:00.511] 
+[Epoch 146/150] Loss=0.3425 | mIoU=0.6552 | mPrec=0.7958 | mRec=0.7761
+[03:05:00.511]   Class 0: IoU=0.6433, Prec=0.7917, Rec=0.7743
+[03:05:00.511]   Class 1: IoU=0.7515, Prec=0.8530, Rec=0.8632
+[03:05:00.511]   Class 2: IoU=0.8082, Prec=0.8997, Rec=0.8883
+[03:05:00.511]   Class 3: IoU=0.4920, Prec=0.6913, Rec=0.6305
+[03:05:00.513]   Class 4: IoU=0.7222, Prec=0.8260, Rec=0.8518
+[03:05:00.515]   Class 5: IoU=0.5142, Prec=0.7131, Rec=0.6483
+[03:06:08.524] 
+[Epoch 147/150] Loss=0.3416 | mIoU=0.6660 | mPrec=0.7987 | mRec=0.7908
+[03:06:08.524]   Class 0: IoU=0.6405, Prec=0.7907, Rec=0.7712
+[03:06:08.524]   Class 1: IoU=0.7549, Prec=0.8573, Rec=0.8634
+[03:06:08.525]   Class 2: IoU=0.8116, Prec=0.9004, Rec=0.8917
+[03:06:08.525]   Class 3: IoU=0.5529, Prec=0.7072, Rec=0.7170
+[03:06:08.527]   Class 4: IoU=0.7227, Prec=0.8257, Rec=0.8528
+[03:06:08.528]   Class 5: IoU=0.5132, Prec=0.7107, Rec=0.6487
+[03:07:17.424] 
+[Epoch 148/150] Loss=0.3407 | mIoU=0.6620 | mPrec=0.7968 | mRec=0.7863
+[03:07:17.425]   Class 0: IoU=0.6421, Prec=0.7903, Rec=0.7739
+[03:07:17.425]   Class 1: IoU=0.7529, Prec=0.8542, Rec=0.8639
+[03:07:17.426]   Class 2: IoU=0.8089, Prec=0.9005, Rec=0.8883
+[03:07:17.426]   Class 3: IoU=0.5311, Prec=0.6975, Rec=0.6901
+[03:07:17.427]   Class 4: IoU=0.7215, Prec=0.8266, Rec=0.8502
+[03:07:17.429]   Class 5: IoU=0.5155, Prec=0.7116, Rec=0.6516
+[03:08:28.448] 
+[Epoch 149/150] Loss=0.3388 | mIoU=0.6685 | mPrec=0.7994 | mRec=0.7944
+[03:08:28.449]   Class 0: IoU=0.6431, Prec=0.7909, Rec=0.7748
+[03:08:28.449]   Class 1: IoU=0.7554, Prec=0.8577, Rec=0.8636
+[03:08:28.449]   Class 2: IoU=0.8103, Prec=0.9015, Rec=0.8891
+[03:08:28.449]   Class 3: IoU=0.5590, Prec=0.7015, Rec=0.7334
+[03:08:28.451]   Class 4: IoU=0.7235, Prec=0.8264, Rec=0.8531
+[03:08:28.451]   Class 5: IoU=0.5195, Prec=0.7184, Rec=0.6524
+[03:09:39.240] 
+[Epoch 150/150] Loss=0.3406 | mIoU=0.6663 | mPrec=0.7984 | mRec=0.7917
+[03:09:39.240]   Class 0: IoU=0.6442, Prec=0.7940, Rec=0.7735
+[03:09:39.240]   Class 1: IoU=0.7546, Prec=0.8582, Rec=0.8620
+[03:09:39.240]   Class 2: IoU=0.8110, Prec=0.8993, Rec=0.8921
+[03:09:39.241]   Class 3: IoU=0.5511, Prec=0.7014, Rec=0.7201
+[03:09:39.242]   Class 4: IoU=0.7223, Prec=0.8244, Rec=0.8536
+[03:09:39.243]   Class 5: IoU=0.5143, Prec=0.7128, Rec=0.6487
+[03:09:39.343] 💾 【定期保存】已保存 Epoch 150 的模型权重
+[03:09:39.343] 
+============================================================
+[03:09:39.344] 🎉 训练全部完成！总共 150 轮
+[03:09:39.344] 🏆 最优模型在 Epoch 143
+[03:09:39.344] 🎯 最优 mIoU = 0.6700
+[03:09:39.344] 📁 最优模型已保存：/root/autodl-tmp/ST-Unet/ComparedModels_U/HRViTRS_Vai_networksD/HRViTRS_Vai_256_256/iter30k_epo150_bs8_lr0.001_s1234/best_model.pth
+[03:09:39.344] ============================================================
