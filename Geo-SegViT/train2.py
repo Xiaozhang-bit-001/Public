@@ -16,11 +16,11 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 # ======================== 导入模型（核心新增） ========================
 # 导入原有模型
 from modelingnew import CONFIGS as CONFIGS_ViT_seg
-from model2.UNet import UNet
-from model2.UperNet import UperNet
-from model2.TransUnet import TransUNet
-from model2.SwinUnet import SwinUNet
-from model2.DeepLabVp import DeeplabV3Plus
+from models.UNet import UNet
+from models.UperNet import UperNet
+from models.TransUnet import TransUNet
+from models.SwinUnet import SwinUNet
+from models.DeepLabVp import DeeplabV3Plus
 
 # 导入训练函数
 from tr_new2 import trainer_synapse
