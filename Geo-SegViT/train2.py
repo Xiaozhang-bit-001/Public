@@ -13,10 +13,7 @@ from datetime import datetime
 # 设置GPU（单卡对比，确保公平性）
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
-# ======================== 导入新模型（核心新增） ========================
-# 导入自定义的Res16_DualDecoder_SegModel
-from model2.Mnew import Res16_DualDecoder_SegModel, SwinConfig
-
+# ======================== 导入模型（核心新增） ========================
 # 导入原有模型
 from modelingnew import CONFIGS as CONFIGS_ViT_seg
 from model2.UNet import UNet
@@ -53,11 +50,11 @@ def setup_logger(args, dataset_name):
 parser = argparse.ArgumentParser()
 # 基础配置（所有模型共用）
 parser.add_argument('--root_path', type=str,
-                    default=r'/root/autodl-tmp/ST-Unet/datasets/Potsdam/npz_data_RGB_improved',
+                    default=r'/root/autodl-tmp/Geo_SegViT/datasets/Potsdam/npz_data_RGB_improved',
                     help='数据根目录')
 parser.add_argument('--dataset', type=str, default='遥感图像语义分割对比实验', help='实验名称')
 parser.add_argument('--list_dir', type=str,
-                    default=r'/root/autodl-tmp/ST-Unet/datasets/Potsdam/lists_txt_RGB_improved',
+                    default=r'/root/autodl-tmp/Geo_SegViT/datasets/Potsdam/lists_txt_RGB_improved',
                     help='数据列表目录')
 parser.add_argument('--num_classes', type=int, default=6, help='输出类别数')
 parser.add_argument('--max_iterations', type=int, default=30000, help='最大迭代数')
@@ -75,19 +72,19 @@ parser.add_argument('--att-type', type=str, choices=['BAM', 'CBAM'], default=Non
 
 # 模型选择参数（新增Res16_DualDecoder）
 parser.add_argument('--model_name', type=str,
-                    default='Res16_DualDecoder',  # 默认训练新模型
+                    default='UperNet',  # 默认训练新模型
                     choices=['UNet', 'UperNet', 'TransUNet',
-                             'SwinUNet', 'DeeplabV3Plus', 'Res16_DualDecoder'],  # 新增选项
+                             'SwinUNet', 'DeeplabV3Plus'], 
                     help='选择训练的模型')
 
 # 数据统计文件路径
 parser.add_argument('--data_stats_path', type=str,
-                    default=r"/root/autodl-tmp/ST-Unet/datasets/Potsdam/rgb_data_stats_improved.npz",
+                    default=r"/root/autodl-tmp/Geo_SegViT/datasets/Potsdam/rgb_data_stats_improved.npz",
                     help='数据均值/标准差文件路径')
 
 # 最终结果保存配置
 parser.add_argument('--final_result_dir', type=str,
-                    default=r"/root/autodl-tmp/ST-Unet/ComparedModel2/FinalResults_U",
+                    default=r"/root/autodl-tmp/Geo_SegViT/ComparedModel2/FinalResults_U",
                     help='最终结果保存根目录')
 parser.add_argument('--save_best_only', action='store_true', default=False,
                     help='是否只保存最优模型（否则保存最终epoch模型）')
@@ -202,14 +199,14 @@ if __name__ == "__main__":
     dataset_name = 'Pots_256'  # 可切换为'Pots_256'
     dataset_config = {
         'Vai_256': {
-            'root_path': r'/root/autodl-tmp/ST-Unet/datasets/Vaihingen/npz_data_RGB_improved',
-            'list_dir': r'/root/autodl-tmp/ST-Unet/datasets/Vaihingen/lists_txt_RGB_improved',
+            'root_path': r'/root/autodl-tmp/Geo_SegViT/datasets/Vaihingen/npz_data_RGB_improved',
+            'list_dir': r'/root/autodl-tmp/Geo_SegViT/datasets/Vaihingen/lists_txt_RGB_improved',
             'num_classes': 6,
             'in_channels': 3
         },
         'Pots_256': {
-            'root_path': r'/root/autodl-tmp/ST-Unet/datasets/Potsdam/npz_data_RGB_improved',
-            'list_dir': r'/root/autodl-tmp/ST-Unet/datasets/Potsdam/lists_txt_RGB_improved',
+            'root_path': r'/root/autodl-tmp/Geo_SegViT/datasets/Potsdam/npz_data_RGB_improved',
+            'list_dir': r'/root/autodl-tmp/Geo_SegViT/datasets/Potsdam/lists_txt_RGB_improved',
             'num_classes': 6,
             'in_channels': 3
         },
@@ -239,12 +236,6 @@ if __name__ == "__main__":
     model_folder = f"{args.model_name}_networks"
     core_tag = f"{args.model_name}_{dataset_name}_{args.img_size}"
     vit_tag = ""
-    if args.model_name == 'ViT_seg':
-        vit_tag = f"vit{args.vit_name}_skip{args.n_skip}_patch{args.vit_patches_size}"
-    # 新模型专用标签（可选）
-    new_model_tag = ""
-    if args.model_name == 'Res16_DualDecoder':
-        new_model_tag = f"swin_embed{args.swin_embed_dim}_win{args.swin_window_size}"
 
     # 通用超参数标签
     iter_tag = f"iter{args.max_iterations // 1000}k"
@@ -256,7 +247,7 @@ if __name__ == "__main__":
 
     # 拼接路径（过滤空字符串）
     path_parts = [
-        "/root/autodl-tmp/ST-Unet/ComResult_U",
+        "/root/autodl-tmp/Geo_SegViT/ComResult_U",
         model_folder,
         core_tag,
         vit_tag,
@@ -292,21 +283,6 @@ if __name__ == "__main__":
         net = SwinUNet(num_classes=args.num_classes, in_channels=args.in_channels,
                        img_size=args.img_size, embed_dim=96,
                        depths=tuple([2, 2, 6, 2]), num_heads=tuple([3, 6, 12, 24])).cuda()
-
-    # -------------------- 新模型初始化（核心新增） --------------------
-    elif args.model_name == 'Res16_DualDecoder':
-        # 初始化Swin配置（可通过命令行参数自定义）
-        swin_config = SwinConfig()
-        swin_config.embed_dim = args.swin_embed_dim
-        swin_config.window_size = args.swin_window_size
-
-        # 初始化新模型
-        net = Res16_DualDecoder_SegModel(
-            num_classes=args.num_classes,
-            swin_config=swin_config
-        ).cuda()
-        logger.info(f"✅ 新模型Res16_DualDecoder初始化完成，Swin配置：")
-        logger.info(f"   embed_dim: {swin_config.embed_dim}, window_size: {swin_config.window_size}")
 
     else:
         raise ValueError(f"未支持的模型: {args.model_name}")
