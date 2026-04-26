@@ -17,7 +17,6 @@ torch.serialization.add_safe_globals([argparse.Namespace])
 from models.SegViT_RS import SegViTRS, CFG as SegViTRS_CFG
 from models.HRViT_RS import HRViTRS, CFG as HRViTRS_CFG
 from models.DeepLabVp import DeeplabV3Plus
-from models.Mnew import Res16_DualDecoder_SegModel, SwinConfig
 from models.SwinUnet import SwinUNet
 from models.TransUnet import TransUNet
 from models.DANet import DANet
