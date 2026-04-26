@@ -4,7 +4,7 @@ import tifffile
 from tqdm import tqdm
 
 # -------------------------- 1. 配置参数（核心修改：新增测试集比例） --------------------------
-RAW_DATA_ROOT = r"/root/autodl-tmp/ST-UNet/datasets/Potsdam"
+RAW_DATA_ROOT = r"/root/autodl-tmp/Geo_SegViT/datasets/Potsdam"
 IMAGE_DIR = os.path.join(RAW_DATA_ROOT, "2_Ortho_RGB")
 LABEL_DIR = os.path.join(RAW_DATA_ROOT, "5_Labels_all")
 
