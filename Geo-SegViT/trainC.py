@@ -11,7 +11,7 @@ from torchvision import transforms
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
 # 导入其他对比模型
-from model2.HRViT_RS import HRViTRS
+from models.HRViT_RS import HRViTRS
 from models.SegViT_RS import SegViTRS
 
 from tr_new2 import trainer_synapse
@@ -23,11 +23,11 @@ def parse_args():
 
     # 基础配置
     parser.add_argument('--root_path', type=str,
-                        default='/root/autodl-tmp/ST-Unet/datasets/Vaihingen/npz_data_RGB_improved',
+                        default='/root/autodl-tmp/Geo_SegViT/datasets/Vaihingen/npz_data_RGB_improved',
                         help='数据根目录')
     parser.add_argument('--dataset', type=str, default='遥感图像语义分割对比实验', help='实验名称')
     parser.add_argument('--list_dir', type=str,
-                        default='/root/autodl-tmp/ST-Unet/datasets/Vaihingen/lists_txt_RGB_improved',
+                        default='/root/autodl-tmp/Geo_SegViT/datasets/Vaihingen/lists_txt_RGB_improved',
                         help='数据列表目录')
     parser.add_argument('--num_classes', type=int, default=6, help='输出类别数')
     parser.add_argument('--max_iterations', type=int, default=30000, help='最大迭代数')
@@ -45,7 +45,7 @@ def parse_args():
 
     # 新增：TransUNet 专属预训练权重路径（极其致命，必须有！）
     parser.add_argument('--pretrained_path', type=str,
-                        default='/root/autodl-tmp/ST-Unet/model/vit_checkpoint/imagenet21k/R50+ViT-B_16.npz',
+                        default='/root/autodl-tmp/Geo_SegViT/model/vit_checkpoint/imagenet21k/R50+ViT-B_16.npz',
                         help='ViT预训练权重绝对路径')
 
     # 新增：正则化参数
@@ -64,7 +64,7 @@ def parse_args():
 
     # 数据统计
     parser.add_argument('--data_stats_path', type=str,
-                        default="/root/autodl-tmp/ST-Unet/datasets/Vaihingen/rgb_data_stats_improved.npz",
+                        default="/root/autodl-tmp/Geo_SegViT/datasets/Vaihingen/rgb_data_stats_improved.npz",
                         help='数据统计文件路径')
 
     return parser.parse_args()
@@ -108,10 +108,7 @@ def get_model(args):
 
 def get_trainer(args):
     """获取训练器"""
-    if args.model_name == 'SegViTRS_Balanced':
-        return trainer_synapse
-    else:
-        return trainer_synapse
+    return trainer_synapse
 
 
 def main():
@@ -138,14 +135,14 @@ def main():
 
     dataset_config = {
         'Vai_256': {
-            'root_path': '/root/autodl-tmp/ST-Unet/datasets/Vaihingen/npz_data_RGB_improved',
-            'list_dir': '/root/autodl-tmp/ST-Unet/datasets/Vaihingen/lists_txt_RGB_improved',
+            'root_path': '/root/autodl-tmp/Geo_SegViT/datasets/Vaihingen/npz_data_RGB_improved',
+            'list_dir': '/root/autodl-tmp/Geo_SegViT/datasets/Vaihingen/lists_txt_RGB_improved',
             'num_classes': 6,
             'in_channels': 3
         },
         'Pots_256':{
-            'root_path': '/root/autodl-tmp/ST-Unet/datasets/Potsdam/npz_data_RGB_improved',
-            'list_dir': '/root/autodl-tmp/ST-Unet/datasets/Potsdam/lists_txt_RGB_improved',
+            'root_path': '/root/autodl-tmp/Geo_SegViT/datasets/Potsdam/npz_data_RGB_improved',
+            'list_dir': '/root/autodl-tmp/Geo_SegViT/datasets/Potsdam/lists_txt_RGB_improved',
             'num_classes': 6,
             'in_channels': 3
         }
